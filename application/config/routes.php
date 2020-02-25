@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -54,7 +54,7 @@ $route['admin/dashboard'] = 'admin_dashboard/index';
 $route['admin/customer'] = 'admin_customer/index';
 $route['signup'] = 'member/signup';
 $route['admin/customer/search'] = 'admin_customer/search';
-$route['admin/customer/verify'] = 'admin_customer/verify';
+$route['admin/customer/verify/(:any)'] = 'admin_customer/verify/$1';
 $route['admin/customer/add'] = 'admin_customer/add';
 $route['admin/customer/update'] = 'admin_customer/update';
 $route['admin/customer/update/(:any)'] = 'admin_customer/update/$1';
